@@ -22,6 +22,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CYB333Project.py" />
+    <Compile Include="port_scanner\port_scanner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="socket_connection\client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="socket_connection\server.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="port_scanner\" />
+    <Folder Include="screenshots\" />
+    <Folder Include="socket_connection\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
